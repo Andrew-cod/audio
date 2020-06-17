@@ -21,7 +21,7 @@ x.play();
 var myVar = setInterval(myTimer, 1);
 function myTimer() {
   var d = new Date();
-  var s = d.getSeconds();
+  var s = d.getUTCSeconds();
   var x = document.getElementById("myAudio"); 
   if(s%10==0){ document.getElementById("myAudio").play(); } else
   {document.getElementById("demo").innerHTML = s;}
